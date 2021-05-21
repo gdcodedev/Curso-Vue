@@ -1,0 +1,21 @@
+<meta chatset="utf-8">
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <h1>{{ titulo }}</h1>
+    <button @click="titulo += '#'">Alterar Título</button>
+    <button @click="$destroy()">Destruir</button>
+</div>
+
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Ciclo de Vida',
+        }
+    })
+
+
+
+</script>
